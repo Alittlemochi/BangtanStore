@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>All Products - BangtanStore</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="header">
+	<div class="container">
+		<div class="navbar">
+			<div class="logo">
+				<a href="tienda.html"><img src="logo.png" height="40px">
+				</a>
+			</div>
+			<nav>
+				<ul id="MenuItems">
+				<li><a href="tienda.html">Home</a></li>
+				<li><a href="products.html">Products</a></li>
+				<li><a href="cart.html">Cart</a></li>
+				<li><a href="account.html">Account</a></li>
+				</ul>
+			</nav>
+			<img src="menu.png" class="menu-icon" 
+			onclick="menutoggle()">
+		</div>	
+	</div>	
+	</div>
+	
+	<!------ featured products ------>
+	<div class="small-container">
+	
+		<div class="row row-2">
+			<h2 class="title">All Products</h2>	
+			<select>
+				<option>Default Sorting</option>
+				<option>Sort by price</option>
+				<option>Sort by rating</option>
+				<option>Sort by sale</option>
+			</select>
+		</div>
+		
+		<div class="row">
+			<div class="col-4">
+				<a href="details2.html"><img src="bolso.jpg">
+				</a>
+				<h4>Handbag</h4>
+				<p>$15.00</p>
+			</div>		
+			<div class="col-4">
+				<img src="backpack.jpg">
+				<h4>Backpack</h4>
+				<p>$17.00</p>
+			</div>
+			<div class="col-4">
+				<img src="sticker.jpg">
+				<h4>Stickers</h4>
+				<p>$5.00</p>
+			</div>
+		</div>
+		
+		<div class="page-btn">
+			<span>1</span>
+			<span>2</span>
+			<span>3</span>
+			<span>4</span>
+			<span>&#8594;</span>
+		</div>
+	</div>
+
+<!------------------footer------------->	
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col-1">
+					<h3>Download our App</h3>
+					<p>Download BangtanStore for Android and iOs mobile phone.</p>	
+					<ul>
+						<img src="android.png"height="60px">
+						<img src="ioss.png"height="60px">
+					</ul>
+				</div>
+				<div class="footer-col-2">
+					<h3>Follow us</h3>
+					<ul>
+						<img src="fb.png"height="60px">
+						<img src="twitter.png"height="60px">
+						<img src="ins.png"height="60px">
+						<img src="ytb.png"height="60px">
+					</ul>
+				</div>
+			</div>
+		</div>		
+	</div>
+
+<!------ js for MenuItems ------>
+
+<script>
+	var MenuItems = document.getElementById("MenuItems");
+	
+	MenuItems.style.maxHeight = "0px";
+	
+	function menutoggle(){
+		if(MenuItems.style.maxHeight == "0px"){
+			MenuItems.style.maxHeight = "200px";
+		}
+		else{
+			MenuItems.style.maxHeight = "0px"
+		}
+	}
+	
+</script>
+	
+</body>
+</html>
